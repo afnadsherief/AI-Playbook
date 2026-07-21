@@ -1,3 +1,12 @@
+---
+Status: Active
+Version: 1.0
+Owner: Engineering Team
+Category: Engineering Standards
+Last Reviewed: 2024-01-15
+Next Review: 2024-07-15
+---
+
 # Coding Standards
 
 Language-agnostic coding standards for producing maintainable code.
@@ -307,3 +316,9 @@ DogValidator, CatValidator, BirdValidator
 - Develop code review guidelines for style issues
 - Create automated refactoring tools
 - Establish code ownership policies
+
+## Related Standards
+
+- [01-Engineering-Standards](01-Engineering-Standards.md) — Core engineering principles
+- [05-Documentation-Standards](05-Documentation-Standards.md) — Documentation guidelines
+- [06-Review-Standards](06-Review-Standards.md) — Code review practices

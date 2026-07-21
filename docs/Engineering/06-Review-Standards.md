@@ -1,3 +1,12 @@
+---
+Status: Active
+Version: 1.0
+Owner: Engineering Team
+Category: Engineering Standards
+Last Reviewed: 2024-01-15
+Next Review: 2024-07-15
+---
+
 # Review Standards
 
 Standards for conducting effective code and document reviews.
@@ -275,3 +284,9 @@ Reviewing massive changes at once:
 - Develop review training program
 - Add automated review tools
 - Establish expert reviewers for domains
+
+## Related Standards
+
+- [04-Coding-Standards](04-Coding-Standards.md) — Code being reviewed
+- [12-Pull-Request-Standards](12-Pull-Request-Standards.md) — PR review process
+- [07-Definition-of-Done](07-Definition-of-Done.md) — Review completion criteria

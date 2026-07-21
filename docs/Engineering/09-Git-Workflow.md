@@ -1,3 +1,12 @@
+---
+Status: Active
+Version: 1.0
+Owner: Engineering Team
+Category: Version Control
+Last Reviewed: 2024-01-15
+Next Review: 2024-07-15
+---
+
 # Git Workflow
 
 Standards for using Git effectively in team environments.
@@ -312,3 +321,9 @@ Binary and generated files:
 - Implement history rewriting policies
 - Build automation for release tagging
 - Develop Git training materials
+
+## Related Standards
+
+- [10-Branching-Strategy](10-Branching-Strategy.md) — Branch organization
+- [11-Commit-Convention](11-Commit-Convention.md) — Commit message format
+- [12-Pull-Request-Standards](12-Pull-Request-Standards.md) — PR workflow

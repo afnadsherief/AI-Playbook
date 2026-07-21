@@ -1,3 +1,12 @@
+---
+Status: Active
+Version: 1.0
+Owner: Engineering Team
+Category: Project Management
+Last Reviewed: 2024-01-15
+Next Review: 2024-07-15
+---
+
 # Milestone Framework
 
 Standards for planning and tracking milestones and releases.
@@ -257,3 +266,9 @@ Blind adherence to plan:
 - Build milestone analytics
 - Develop capacity planning tools
 - Establish milestone templates for common types
+
+## Related Standards
+
+- [03-Architecture-Standards](03-Architecture-Standards.md) — Architectural planning
+- [07-Definition-of-Done](07-Definition-of-Done.md) — Completion criteria
+- [12-Pull-Request-Standards](12-Pull-Request-Standards.md) — Release process

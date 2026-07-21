@@ -1,3 +1,12 @@
+---
+Status: Active
+Version: 1.0
+Owner: Engineering Team
+Category: Version Control
+Last Reviewed: 2024-01-15
+Next Review: 2024-07-15
+---
+
 # Branching Strategy
 
 Standards for organizing work with Git branches.
@@ -93,23 +102,23 @@ Feature/UserRegistration
 ## Branch Lifecycle
 
 ```
-┌─────────────────────────────────────────────────────────┐
-│                     BRANCH LIFECYCLE                     │
-└─────────────────────────────────────────────────────────┘
+                                                                                                                                                                                 
+                        BRANCH LIFECYCLE                        
+                                                                                                                                                                                 
 
-┌──────────┐     ┌──────────┐     ┌──────────┐
-│  create  │────►│ develop  │────►│  review  │
-└──────────┘     └──────────┘     └──────────┘
-                                    │    │
-                                    │    ▼
-                              ┌─────┴─────┐
-                              │  revisions│
-                              └───────────┘
-                                    │
-                                    ▼
-┌──────────┐     ┌──────────┐     ┌──────────┐
-│  delete  │◄────│  merge   │◄────│  approve │
-└──────────┘     └──────────┘     └──────────┘
+                                                                                                                      
+     create                        develop                         review     
+                                                                                                                      
+                                              
+                                              
+                                                                     
+                                   revisions   
+                                                                     
+                                       
+                                       
+                                                                                                                      
+     delete                         merge                          approve    
+                                                                                                                      
 ```
 
 ### 1. Create
@@ -156,31 +165,31 @@ git push -u origin feature/user-avatars
 
 ```
 Required settings:
-✓ Require pull request reviews (1-2 approvers)
-✓ Require status checks to pass
-✓ Require branches to be up to date
-✓ Restrict who can push
-✓ Include administrators
-✓ Do not allow force pushes
-✓ Do not allow deletions
+    Require pull request reviews (1-2 approvers)
+    Require status checks to pass
+    Require branches to be up to date
+    Restrict who can push
+    Include administrators
+    Do not allow force pushes
+    Do not allow deletions
 ```
 
 ### Release Branches
 
 ```
 Required settings:
-✓ Require pull request reviews (1 approver)
-✓ Require status checks to pass
-✓ Prevent force pushes
-✓ Allow deletions (after merge)
+    Require pull request reviews (1 approver)
+    Require status checks to pass
+    Prevent force pushes
+    Allow deletions (after merge)
 ```
 
 ### Feature Branches
 
 ```
 Settings:
-✗ No restrictions (contributors)
-✓ Delete after merge
+    No restrictions (contributors)
+    Delete after merge
 ```
 
 ## Release Branching
@@ -216,24 +225,24 @@ git checkout -b maintenance/v1.0.x
 
 ```
 main
-├── feature/user-avatars (merged)
-├── feature/dark-mode (merged)
-├── feature/export-csv (in review)
-├── fix/typo-in-docs (merged)
-└── hotfix/security-patch (merged)
+          feature/user-avatars (merged)
+          feature/dark-mode (merged)
+          feature/export-csv (in review)
+          fix/typo-in-docs (merged)
+          hotfix/security-patch (merged)
 ```
 
 ### Bad: Messy Branches
 
 ```
 main
-├── Feature-User-Authentication
-├── bugfix
-├── fix_auth
-├── new_feature
-├── user_avatars_final
-├── user_avatars_final_v2
-└── user_avatars_final_v3_REALLY_FINAL
+          Feature-User-Authentication
+          bugfix
+          fix_auth
+          new_feature
+          user_avatars_final
+          user_avatars_final_v2
+          user_avatars_final_v3_REALLY_FINAL
 ```
 
 ## Checklist
@@ -312,3 +321,9 @@ Unused branches left behind:
 - Set up branch age monitoring
 - Develop branch analytics
 - Create branch templates
+
+## Related Standards
+
+- [09-Git-Workflow](09-Git-Workflow.md) — Git operations
+- [11-Commit-Convention](11-Commit-Convention.md) — Commit workflow
+- [12-Pull-Request-Standards](12-Pull-Request-Standards.md) — PR lifecycle

@@ -1,3 +1,12 @@
+---
+Status: Active
+Version: 1.0
+Owner: Engineering Team
+Category: Engineering Standards
+Last Reviewed: 2024-01-15
+Next Review: 2024-07-15
+---
+
 # Documentation Standards
 
 Standards for creating clear, maintainable documentation.
@@ -252,3 +261,9 @@ Waiting for "perfect" docs:
 - Develop translation workflow
 - Set up search functionality
 - Build documentation review automation
+
+## Related Standards
+
+- [04-Coding-Standards](04-Coding-Standards.md) — Code documentation patterns
+- [07-Definition-of-Done](07-Definition-of-Done.md) — Documentation completion criteria
+- [12-Pull-Request-Standards](12-Pull-Request-Standards.md) — PR documentation requirements

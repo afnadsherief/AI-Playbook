@@ -1,3 +1,12 @@
+---
+Status: Active
+Version: 1.0
+Owner: Engineering Team
+Category: Engineering Standards
+Last Reviewed: 2024-01-15
+Next Review: 2024-07-15
+---
+
 # Repository Standards
 
 Standards for organizing and maintaining code repositories.
@@ -221,3 +230,9 @@ Large binaries in version control:
 - Add repository scoring metrics
 - Implement automated onboarding checks
 - Create cross-repository dependency tracking
+
+## Related Standards
+
+- [01-Engineering-Standards](01-Engineering-Standards.md) — Core engineering principles
+- [03-Architecture-Standards](03-Architecture-Standards.md) — System design principles
+- [09-Git-Workflow](09-Git-Workflow.md) — Git best practices

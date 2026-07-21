@@ -1,3 +1,12 @@
+---
+Status: Active
+Version: 1.0
+Owner: Engineering Team
+Category: Engineering Standards
+Last Reviewed: 2024-01-15
+Next Review: 2024-07-15
+---
+
 # Definition of Done
 
 Standards for determining when work is complete.
@@ -206,3 +215,9 @@ Assuming someone else will do it:
 - Track DoD compliance metrics
 - Conduct regular DoD retrospectives
 - Adjust standards based on team feedback
+
+## Related Standards
+
+- [01-Engineering-Standards](01-Engineering-Standards.md) — Overall quality standards
+- [08-Milestone-Framework](08-Milestone-Framework.md) — Milestone completion criteria
+- [12-Pull-Request-Standards](12-Pull-Request-Standards.md) — PR merge criteria

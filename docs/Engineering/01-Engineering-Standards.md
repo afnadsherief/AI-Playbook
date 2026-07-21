@@ -1,3 +1,12 @@
+---
+Status: Active
+Version: 1.0
+Owner: Engineering Team
+Category: Engineering Standards
+Last Reviewed: 2024-01-15
+Next Review: 2024-07-15
+---
+
 # Engineering Standards
 
 Foundational engineering standards that govern all development work.
@@ -174,3 +183,9 @@ Dead code in the codebase:
 - Develop mentorship program for standards adoption
 - Establish regular standards review cadence
 - Build tooling for standards enforcement
+
+## Related Standards
+
+- [02-Repository-Standards](02-Repository-Standards.md) — Repository structure and configuration
+- [04-Coding-Standards](04-Coding-Standards.md) — Language-agnostic coding practices
+- [06-Review-Standards](06-Review-Standards.md) — Conducting effective reviews

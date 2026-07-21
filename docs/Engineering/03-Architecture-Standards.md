@@ -1,3 +1,12 @@
+---
+Status: Active
+Version: 1.0
+Owner: Engineering Team
+Category: Architecture
+Last Reviewed: 2024-01-15
+Next Review: 2024-07-15
+---
+
 # Architecture Standards
 
 Standards for designing scalable, maintainable systems.
@@ -285,3 +294,9 @@ Unstructured, tangled dependencies:
 - Build architecture decision database
 - Create technology radar
 - Establish architecture coaching program
+
+## Related Standards
+
+- [01-Engineering-Standards](01-Engineering-Standards.md) — Core engineering principles
+- [08-Milestone-Framework](08-Milestone-Framework.md) — Planning milestones
+- [ADR Index](../adr/) — Architecture Decision Records

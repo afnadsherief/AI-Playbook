@@ -1,3 +1,12 @@
+---
+Status: Active
+Version: 1.0
+Owner: Engineering Team
+Category: Version Control
+Last Reviewed: 2024-01-15
+Next Review: 2024-07-15
+---
+
 # Pull Request Standards
 
 Standards for creating, reviewing, and merging pull requests.
@@ -426,3 +435,9 @@ Focusing on style over substance:
 - Build review assignment system
 - Add automated first-response SLAs
 - Develop PR analytics dashboard
+
+## Related Standards
+
+- [06-Review-Standards](06-Review-Standards.md) — Review practices
+- [10-Branching-Strategy](10-Branching-Strategy.md) — Branch lifecycle
+- [11-Commit-Convention](11-Commit-Convention.md) — Commit conventions

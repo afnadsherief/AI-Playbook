@@ -1,3 +1,12 @@
+---
+Status: Active
+Version: 1.0
+Owner: Engineering Team
+Category: Version Control
+Last Reviewed: 2024-01-15
+Next Review: 2024-07-15
+---
+
 # Commit Convention
 
 Standards for writing clear, consistent commit messages.
@@ -372,3 +381,9 @@ Relying on auto-generated messages:
 - Develop commit message generators
 - Build automated changelog generation
 - Create commit message API for automation
+
+## Related Standards
+
+- [09-Git-Workflow](09-Git-Workflow.md) — Git operations
+- [10-Branching-Strategy](10-Branching-Strategy.md) — Branch organization
+- [12-Pull-Request-Standards](12-Pull-Request-Standards.md) — PR workflow
