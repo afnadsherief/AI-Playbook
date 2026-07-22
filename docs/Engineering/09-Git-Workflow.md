@@ -1,6 +1,7 @@
 ---
 Status: Active
 Version: 1.0
+Maturity: Production
 Owner: Engineering Team
 Category: Version Control
 Last Reviewed: 2024-01-15
