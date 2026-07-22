@@ -8,24 +8,143 @@ RFCs provide a structured process for discussing, refining, and documenting sign
 
 ## RFC Lifecycle
 
+The full lifecycle from idea to standard:
+
 ```
-┌─────────┐     ┌─────────┐     ┌──────────┐     ┌─────────┐
-│   RFC   │────►│ Review  │────►│ Accepted │────►│   ADR   │────► Standard
-└─────────┘     └─────────┘     └──────────┘     └─────────┘
-     │               │                │                │
-     ▼               ▼                ▼                ▼
- Proposed       Discussion       Finalized        Documented
+┌─────────┐
+│  Idea   │
+└────┬────┘
+     │
+     ▼
+┌─────────┐
+│   RFC   │◄──── Feedback Loop
+└────┬────┘
+     │
+     ▼
+┌─────────┐
+│  Review │◄──── Stakeholder Discussion
+└────┬────┘
+     │
+     ▼
+┌───────────┐
+│ Approval  │◄──── Decision Gate
+└─────┬─────┘
+      │
+      ▼
+┌─────────┐
+│   ADR   │◄──── Document Decision
+└────┬────┘
+     │
+     ▼
+┌───────────┐
+│ Standard  │◄──── Implementation
+└─────┬─────┘
+      │
+      ▼
+┌──────────────┐
+│ Institutional │◄──── Adoption & Governance
+└──────────────┘
 ```
 
-### Stages
+### Stage Definitions
 
-| Stage | Description |
-|-------|-------------|
-| **RFC** | Initial proposal with problem statement and proposed solution |
-| **Review** | Open for community feedback and discussion |
-| **Accepted** | Approved for implementation or further development |
-| **ADR** | Formal Architecture Decision Record created |
-| **Standard** | Incorporated into Engineering Standards |
+| Stage | Description | Entry Criteria | Exit Criteria |
+|-------|-------------|----------------|---------------|
+| **Idea** | Initial concept or problem identification | Problem identified | Idea documented |
+| **RFC** | Formal proposal with solution | Proposal written | RFC submitted |
+| **Review** | Community feedback and refinement | RFC open for review | Feedback incorporated or closed |
+| **Approval** | Decision gate for acceptance | Review complete | Decision made |
+| **ADR** | Formal decision documentation | RFC approved | ADR created |
+| **Standard** | Implementation into practice | ADR exists | Standard published |
+| **Institutional** | Organizational adoption | Standard exists | Widely adopted |
+
+### Stage Details
+
+#### 1. Idea
+
+The starting point for any change:
+
+- Identify a problem or opportunity
+- Initial sketching of potential solutions
+- Informal discussion with stakeholders
+- Outcome: Documented idea ready for RFC
+
+#### 2. RFC
+
+Formal proposal following the RFC template:
+
+- Problem statement
+- Proposed solution
+- Alternatives considered
+- Trade-offs analyzed
+- Recommendation
+
+#### 3. Review
+
+Open discussion period:
+
+- Stakeholder feedback
+- Questions and concerns
+- Refinement of proposal
+- Consensus building
+
+#### 4. Approval
+
+Decision gate:
+
+- Review period concluded
+- All concerns addressed or documented
+- Formal approval or rejection
+- Rationale documented
+
+#### 5. ADR
+
+Architecture Decision Record creation:
+
+- Capture decision rationale
+- Document context and constraints
+- Record alternatives considered
+- Link to RFC
+
+#### 6. Standard
+
+Implementation into practice:
+
+- Publish to Engineering Standards
+- Create implementation guidance
+- Update related documentation
+- Train teams
+
+#### 7. Institutional
+
+Organizational adoption:
+
+- Wide team adoption
+- Governance processes established
+- Compliance verification
+- Continuous improvement
+
+## Maturity in RFC Lifecycle
+
+RFCs track maturity throughout the lifecycle:
+
+| Maturity Level | Definition |
+|----------------|------------|
+| **Experimental** | Initial proposal, high uncertainty, subject to significant change |
+| **Emerging** | Approved in principle, needs validation through implementation |
+| **Stable** | Proven through use, minor changes expected |
+| **Production** | Fully adopted, changes go through formal process |
+| **Institutional** | Core organizational practice, rarely changed |
+
+### Maturity Transitions
+
+```
+Experimental → Emerging → Stable → Production → Institutional
+     │              │          │          │
+     ▼              ▼          ▼          ▼
+  "Will this    "Does this    "Is this   "Is this
+   work?"        work well?"   reliable?"  essential?"
+```
 
 ## When to Create an RFC
 
@@ -36,6 +155,8 @@ Create an RFC when proposing:
 - Process changes with significant impact
 - Tooling or infrastructure decisions with broad scope
 - Changes to existing standards
+- Governance framework changes
+- Cross-cutting concerns
 
 ## RFC Process
 
