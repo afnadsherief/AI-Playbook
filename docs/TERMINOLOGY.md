@@ -126,6 +126,41 @@ Same conventions as RFC naming.
 | Component folders | kebab-case | `order-processor/` |
 | Private folders | prefixed underscore | `_schemas/` |
 
+### Engineering Domain Directory Naming
+
+All future engineering domains MUST follow the format: `docs/<Domain>-Engineering/`
+
+**Convention**: `<Domain>-Engineering/` (kebab-case with `-Engineering` suffix)
+
+| Domain | Directory |
+|--------|----------|
+| Context | `docs/Context-Engineering/` |
+| Memory | `docs/Memory-Engineering/` |
+| Reasoning | `docs/Reasoning-Engineering/` |
+| Decision | `docs/Decision-Engineering/` |
+| Planning | `docs/Planning-Engineering/` |
+| Workflow | `docs/Workflow-Engineering/` |
+| Tool | `docs/Tool-Engineering/` |
+| Agent | `docs/Agent-Engineering/` |
+| Evaluation | `docs/Evaluation-Engineering/` |
+| Security | `docs/Security-Engineering/` |
+| Privacy | `docs/Privacy-Engineering/` |
+| Governance | `docs/Governance-Engineering/` |
+
+**Rationale**:
+- **Predictable**: Always know where to find domain content
+- **Human-readable**: Clear, descriptive names
+- **Vendor-neutral**: No vendor-specific terminology
+- **Stable**: Consistent naming across volumes
+- **Scalable**: Pattern works for any future domain
+- **Machine-readable**: Compatible with tooling and automation
+
+**Existing Directories** (canonical pattern):
+- `docs/Engineering/` — Engineering Standards
+- `docs/Prompt-Engineering/` — Prompt Engineering
+
+**Exceptions**: Only via ADR approval
+
 ### Version Terminology
 
 | Term | Definition |

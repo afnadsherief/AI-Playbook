@@ -190,6 +190,58 @@ Production-grade implementation systems.
 
 ---
 
+## Directory Naming Convention
+
+All engineering domains follow a canonical directory naming pattern.
+
+### Standard Format
+
+```
+docs/<Domain>-Engineering/
+```
+
+Examples:
+- `docs/Context-Engineering/`
+- `docs/Memory-Engineering/`
+- `docs/Reasoning-Engineering/`
+- `docs/Workflow-Engineering/`
+- `docs/Agent-Engineering/`
+
+### Existing Canonical Directories
+
+| Directory | Description | Volume |
+|-----------|-------------|--------|
+| `docs/Engineering/` | Engineering Standards | I |
+| `docs/Prompt-Engineering/` | Prompt Engineering | I |
+
+### Benefits
+
+| Benefit | Description |
+|---------|-------------|
+| **Consistency** | Uniform pattern across all volumes |
+| **Navigation** | Predictable location for domain content |
+| **Discoverability** | Easy to find and explore domains |
+| **Automation** | Compatible with build scripts and tooling |
+| **AI Indexing** | Semantic search optimization |
+| **Future-proof** | Pattern scales to any future domain |
+
+### Governance
+
+Per the **Domain Introduction Protocol** (see RFC README), every new engineering domain must:
+1. Update `INDEX.md` with directory location
+2. Update `TERMINOLOGY.md` with naming convention
+3. Follow the `<Domain>-Engineering/` pattern
+
+**Exception**: Only via ADR approval
+
+### References
+
+- [TERMINOLOGY.md](./TERMINOLOGY.md) — Full naming standards
+- [INDEX.md](./INDEX.md) — Domain directory listings
+- [RFC-0008](./RFC/0008-Engineering-Dependency-Model.md) — Engineering Dependency Model
+
+---
+
 ## Volume Relationship Diagram
 
 ```

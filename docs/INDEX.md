@@ -61,6 +61,38 @@ AI-Playbook/
 
 ---
 
+## Directory Naming Convention
+
+All engineering domains follow the canonical format: `docs/<Domain>-Engineering/`
+
+**Convention**: `<Domain>-Engineering/` (kebab-case with `-Engineering` suffix)
+
+**Examples**:
+| Domain | Directory | Volume |
+|--------|-----------|--------|
+| Context | `docs/Context-Engineering/` | II |
+| Memory | `docs/Memory-Engineering/` | II |
+| Reasoning | `docs/Reasoning-Engineering/` | II |
+| Decision | `docs/Decision-Engineering/` | II |
+| Planning | `docs/Planning-Engineering/` | II |
+| Workflow | `docs/Workflow-Engineering/` | III |
+| Tool | `docs/Tool-Engineering/` | III |
+| Agent | `docs/Agent-Engineering/` | III |
+| Evaluation | `docs/Evaluation-Engineering/` | IV |
+
+**Benefits**:
+- **Consistency**: Uniform pattern across all domains
+- **Navigation**: Predictable location for domain content
+- **Discoverability**: Easy to find and explore domains
+- **Automation**: Compatible with tooling and scripts
+- **AI Indexing**: Semantic search optimization
+
+**Standard Reference**: [TERMINOLOGY.md](./TERMINOLOGY.md)
+
+**Exceptions**: Only via ADR approval
+
+---
+
 ## Standards
 
 ### Engineering Standards
