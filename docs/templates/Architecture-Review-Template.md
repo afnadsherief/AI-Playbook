@@ -1,3 +1,13 @@
+---
+Status: Active
+Version: 1.0
+Maturity: Production
+Owner: Engineering Team
+Category: Template
+Last Reviewed: 2024-01-15
+Next Review: 2024-07-15
+---
+
 # Architecture Review Template
 
 Use this template for documenting architecture reviews of AI systems, prompts, or components.
@@ -269,6 +279,168 @@ What components or patterns will need deprecation?
 
 ---
 
+## Architectural Principles
+
+### Guiding Principles
+
+What core principles guide this architecture?
+
+| Principle | Description | Application |
+|-----------|-------------|-------------|
+| **KISS** | Keep it simple, stupid | |
+| **DRY** | Don't repeat yourself | |
+| **YAGNI** | You aren't gonna need it | |
+| **Separation of Concerns** | Modular design | |
+
+### Principles Checklist
+
+- [ ] Each component has a single, well-defined purpose
+- [ ] Complexity is justified by clear benefits
+- [ ] Dependencies are explicit and minimal
+- [ ] Boundaries between components are clear
+- [ ] State management is explicit and predictable
+
+---
+
+## Decision Rationale
+
+### Why This Design
+
+Explain the fundamental reasoning behind this architecture.
+
+**Primary Rationale:**
+
+[Explain why this approach was chosen over alternatives]
+
+**Supporting Rationale:**
+
+1. 
+2. 
+3. 
+
+### Evidence
+
+What evidence supports this decision?
+
+| Evidence Type | Source | Relevance |
+|--------------|--------|-----------|
+| Performance data | | |
+| User research | | |
+| Technical analysis | | |
+| Industry patterns | | |
+| Historical context | | |
+
+### Alternatives Considered
+
+What other approaches were evaluated?
+
+| Alternative | Why Not Chosen | Key Differentiator |
+|-------------|----------------|-------------------|
+| | | |
+| | | |
+
+---
+
+## Known Constraints
+
+### Technical Constraints
+
+What technical limitations affect this architecture?
+
+| Constraint | Impact | Mitigation |
+|------------|--------|------------|
+| | | |
+| | | |
+
+### Resource Constraints
+
+What resource limitations exist?
+
+| Resource | Constraint | Impact |
+|----------|------------|--------|
+| Budget | | |
+| Timeline | | |
+| Team Size | | |
+| Expertise | | |
+
+### External Constraints
+
+What external factors constrain the design?
+
+| Constraint | Source | Impact |
+|------------|--------|--------|
+| Regulatory | | |
+| Compliance | | |
+| Vendor | | |
+| Third-party | | |
+
+### Accepted Limitations
+
+What constraints are explicitly accepted?
+
+| Limitation | Justification | Review Date |
+|------------|---------------|------------|
+| | | |
+
+---
+
+## Future Evolution
+
+### Evolution Trajectory
+
+How is this architecture expected to evolve?
+
+```
+Current State -> v1.x -> v2.x -> v3.x
+     |             |        |        |
+     v             v        v        v
+  [current]   [near-term] [mid-term] [long-term]
+```
+
+### Planned Extensions
+
+What capabilities are planned for future versions?
+
+| Extension | Priority | Estimated Effort | Dependencies |
+|-----------|----------|-----------------|--------------|
+| | High/Medium/Low | | |
+| | High/Medium/Low | | |
+
+### Scalability Trajectory
+
+How will this architecture scale?
+
+| Scale Dimension | Current | v1.x | v2.x |
+|-----------------|---------|-------|-------|
+| Users | | | |
+| Requests | | | |
+| Data | | | |
+| Complexity | | | |
+
+### Maintenance Expectations
+
+What ongoing maintenance is required?
+
+| Activity | Frequency | Effort |
+|----------|-----------|--------|
+| Updates | | |
+| Monitoring | | |
+| Optimization | | |
+| Refactoring | | |
+
+### Sunset Considerations
+
+When and how will this architecture be deprecated?
+
+| Consideration | Plan |
+|---------------|------|
+| End of life trigger | |
+| Deprecation timeline | |
+| Migration path | |
+| Archival strategy | |
+
+---
+
 ## Approval
 
 ### Review Checklist
@@ -334,3 +506,54 @@ Key points from the review discussion:
 | Version | Date | Author | Changes |
 |---------|------|--------|---------|
 | 1.0 | | | Initial version |
+
+---
+
+## Related Documents
+
+| Document | Relationship |
+|----------|--------------|
+| [RFC README](../RFC/README.md) | RFC lifecycle and governance |
+| [Glossary](../GLOSSARY.md) | Term definitions |
+| [Terminology](../TERMINOLOGY.md) | Language standards |
+| [Evolution](../EVOLUTION.md) | Volume roadmap |
+| [Cognitive Architecture](../COGNITIVE.md) | Cognitive stack |
+
+## Related Standards
+
+| Standard | Relationship |
+|----------|--------------|
+| [Architecture Standards](../Engineering/03-Architecture-Standards.md) | Architecture guidelines |
+| [Engineering Standards](../Engineering/01-Engineering-Standards.md) | Foundational standards |
+
+## Related RFCs
+
+| RFC | Relationship |
+|-----|--------------|
+| [0001: Prompt Contracts](../RFC/0001-Prompt-Contracts.md) | Interface specifications |
+| [0002: Prompt Observability](../RFC/0002-Prompt-Observability.md) | Runtime visibility |
+| [0008: Engineering Dependency Model](../RFC/0008-Engineering-Dependency-Model.md) | Domain dependencies |
+
+## Related Specifications
+
+| Specification | Relationship |
+|--------------|--------------|
+| [Specs README](../specs/README.md) | Machine-readable formats |
+
+## Related Templates
+
+| Template | Relationship |
+|----------|--------------|
+| [RFC Template](../RFC/0000-rfc-template.md) | RFC documentation |
+| [ADR Template](../adr/0000-template.md) | ADR documentation |
+
+## Future Evolution
+
+This template will be updated as:
+- Architecture review processes evolve
+- New review criteria are identified
+- Cross-domain review patterns emerge
+
+---
+
+*Template Version: 1.0*
