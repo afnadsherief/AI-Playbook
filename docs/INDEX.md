@@ -1,3 +1,13 @@
+---
+Status: Active
+Version: 1.0
+Maturity: Production
+Owner: Engineering Team
+Category: Knowledge Foundation
+Last Reviewed: 2024-01-15
+Next Review: 2024-07-15
+---
+
 # AI-Playbook Index
 
 Primary navigation and knowledge map for the AI-Playbook repository.
@@ -265,9 +275,35 @@ Idea → Draft → RFC → Review → Prototype → Approval → ADR → Standar
 
 ---
 
-## Contributing
+## Related Documents
 
-See [CONTRIBUTING.md](../CONTRIBUTING.md) for guidelines on adding new documents and standards.
+| Document | Relationship |
+|----------|--------------|
+| [GLOSSARY](./GLOSSARY.md) | Term definitions |
+| [TERMINOLOGY](./TERMINOLOGY.md) | Language standards |
+| [EVOLUTION](./EVOLUTION.md) | Volume roadmap |
+| [COGNITIVE](./COGNITIVE.md) | Cognitive architecture |
+| [RFC README](./RFC/README.md) | Governance lifecycle |
+
+## Related RFCs
+
+| RFC | Relationship |
+|-----|--------------|
+| [0001: Prompt Contracts](./RFC/0001-Prompt-Contracts.md) | Interface specifications |
+| [0002: Prompt Observability](./RFC/0002-Prompt-Observability.md) | Runtime visibility |
+
+## Related Specifications
+
+| Specification | Relationship |
+|--------------|--------------|
+| [Specs README](../specs/README.md) | Machine-readable formats |
+
+## Future Evolution
+
+This index will expand as:
+- New domains are added (Context, Memory, Reasoning, etc.)
+- Volume II and beyond are published
+- Dashboard placeholders are implemented
 
 ---
 

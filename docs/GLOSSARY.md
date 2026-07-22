@@ -1,3 +1,13 @@
+---
+Status: Active
+Version: 1.0
+Maturity: Production
+Owner: Engineering Team
+Category: Knowledge Foundation
+Last Reviewed: 2024-01-15
+Next Review: 2024-07-15
+---
+
 # AI-Playbook Glossary
 
 Precise definitions of engineering terms used throughout this repository.
@@ -280,6 +290,30 @@ Terms that should NOT be used:
 | Trick | Implies workarounds |
 | Secret | Implies hidden knowledge |
 | Hack | Implies improper solutions |
+
+---
+
+## Related Documents
+
+| Document | Relationship |
+|----------|--------------|
+| [INDEX](./INDEX.md) | Navigation |
+| [TERMINOLOGY](./TERMINOLOGY.md) | Usage conventions |
+| [EVOLUTION](./EVOLUTION.md) | Volume roadmap |
+| [COGNITIVE](./COGNITIVE.md) | Cognitive architecture |
+
+## Related RFCs
+
+| RFC | Relationship |
+|-----|--------------|
+| [0001: Prompt Contracts](./RFC/0001-Prompt-Contracts.md) | Contract definition |
+| [0002: Prompt Observability](./RFC/0002-Prompt-Observability.md) | Observability definition |
+
+## Related Templates
+
+| Template | Relationship |
+|----------|--------------|
+| [Architecture Review](./templates/Architecture-Review-Template.md) | Document review |
 
 ---
 

@@ -1,3 +1,13 @@
+---
+Status: Active
+Version: 1.0
+Maturity: Production
+Owner: Engineering Team
+Category: Template
+Last Reviewed: 2024-01-15
+Next Review: 2024-07-15
+---
+
 # Architecture Review Template
 
 Use this template for documenting architecture reviews of AI systems, prompts, or components.
@@ -496,3 +506,53 @@ Key points from the review discussion:
 | Version | Date | Author | Changes |
 |---------|------|--------|---------|
 | 1.0 | | | Initial version |
+
+---
+
+## Related Documents
+
+| Document | Relationship |
+|----------|--------------|
+| [RFC README](../RFC/README.md) | RFC lifecycle and governance |
+| [Glossary](../GLOSSARY.md) | Term definitions |
+| [Terminology](../TERMINOLOGY.md) | Language standards |
+| [Evolution](../EVOLUTION.md) | Volume roadmap |
+| [Cognitive Architecture](../COGNITIVE.md) | Cognitive stack |
+
+## Related Standards
+
+| Standard | Relationship |
+|----------|--------------|
+| [Architecture Standards](../Engineering/03-Architecture-Standards.md) | Architecture guidelines |
+| [Engineering Standards](../Engineering/01-Engineering-Standards.md) | Foundational standards |
+
+## Related RFCs
+
+| RFC | Relationship |
+|-----|--------------|
+| [0001: Prompt Contracts](../RFC/0001-Prompt-Contracts.md) | Interface specifications |
+| [0002: Prompt Observability](../RFC/0002-Prompt-Observability.md) | Runtime visibility |
+
+## Related Specifications
+
+| Specification | Relationship |
+|--------------|--------------|
+| [Specs README](../specs/README.md) | Machine-readable formats |
+
+## Related Templates
+
+| Template | Relationship |
+|----------|--------------|
+| [RFC Template](../RFC/0000-rfc-template.md) | RFC documentation |
+| [ADR Template](../adr/0000-template.md) | ADR documentation |
+
+## Future Evolution
+
+This template will be updated as:
+- Architecture review processes evolve
+- New review criteria are identified
+- Cross-domain review patterns emerge
+
+---
+
+*Template Version: 1.0*
