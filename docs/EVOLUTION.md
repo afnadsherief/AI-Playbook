@@ -313,6 +313,21 @@ As volumes complete, governance will evolve:
 
 ---
 
+## Future RFCs
+
+RFC roadmap for Volume II and beyond:
+
+| RFC | Title | Volume | Sprint |
+|-----|-------|--------|--------|
+| RFC 0003 | Context Engineering | II | 3 |
+| RFC 0004 | Memory Engineering | II | 4 |
+| RFC 0005 | Cognitive Stack Specification | II | 5 |
+| RFC 0006 | Layer Integration Protocol | II | 5 |
+| RFC 0007 | Agent Execution Model | III | 7 |
+| RFC 0008 | Engineering Dependency Model | I | 2.7 (this sprint) |
+
+---
+
 ## Related Documents
 
 - [INDEX](./INDEX.md) — Repository navigation
@@ -320,6 +335,7 @@ As volumes complete, governance will evolve:
 - [RFC README](./RFC/README.md) — RFC lifecycle
 - [Engineering Standards](../Engineering/) — Volume I content
 - [Prompt Engineering](../Prompt-Engineering/) — Volume I content
+- [Cognitive Architecture](./COGNITIVE.md) — Cognitive stack roadmap
 
 ---
 

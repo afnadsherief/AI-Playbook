@@ -532,6 +532,7 @@ Key points from the review discussion:
 |-----|--------------|
 | [0001: Prompt Contracts](../RFC/0001-Prompt-Contracts.md) | Interface specifications |
 | [0002: Prompt Observability](../RFC/0002-Prompt-Observability.md) | Runtime visibility |
+| [0008: Engineering Dependency Model](../RFC/0008-Engineering-Dependency-Model.md) | Domain dependencies |
 
 ## Related Specifications
 

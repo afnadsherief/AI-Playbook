@@ -108,6 +108,7 @@ Requests for Comments — proposals for new standards and architectural changes.
 |-----|-------|----------|--------|
 | 0001 | [Prompt Contracts](./RFC/0001-Prompt-Contracts.md) | Experimental | Open |
 | 0002 | [Prompt Observability](./RFC/0002-Prompt-Observability.md) | Experimental | Open |
+| 0008 | [Engineering Dependency Model](./RFC/0008-Engineering-Dependency-Model.md) | Draft | Draft |
 
 **Lifecycle**: Idea → Draft → RFC → Review → Prototype → Approval → ADR → Standard → Production → Institutional → Deprecated → Archived
 
@@ -285,12 +286,24 @@ Idea → Draft → RFC → Review → Prototype → Approval → ADR → Standar
 | [COGNITIVE](./COGNITIVE.md) | Cognitive architecture |
 | [RFC README](./RFC/README.md) | Governance lifecycle |
 
+## Governance
+
+### Standing Repository Rules
+
+**Domain Introduction Protocol**: No new engineering domain may be introduced without first updating:
+- `INDEX.md` — Add to navigation and domain tables
+- `GLOSSARY.md` — Add domain-specific terminology
+- `TERMINOLOGY.md` — Add domain naming conventions
+
+See [RFC README](./RFC/README.md) for full governance documentation.
+
 ## Related RFCs
 
 | RFC | Relationship |
 |-----|--------------|
 | [0001: Prompt Contracts](./RFC/0001-Prompt-Contracts.md) | Interface specifications |
 | [0002: Prompt Observability](./RFC/0002-Prompt-Observability.md) | Runtime visibility |
+| [0008: Engineering Dependency Model](./RFC/0008-Engineering-Dependency-Model.md) | Domain dependencies |
 
 ## Related Specifications
 

@@ -308,6 +308,7 @@ Terms that should NOT be used:
 |-----|--------------|
 | [0001: Prompt Contracts](./RFC/0001-Prompt-Contracts.md) | Contract definition |
 | [0002: Prompt Observability](./RFC/0002-Prompt-Observability.md) | Observability definition |
+| [0008: Engineering Dependency Model](./RFC/0008-Engineering-Dependency-Model.md) | Dependency model |
 
 ## Related Templates
 

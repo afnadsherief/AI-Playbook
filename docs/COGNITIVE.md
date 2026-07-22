@@ -400,15 +400,63 @@ Each layer requires validation before proceeding:
 
 ---
 
+## Future Refactors
+
+### Planned Rename: COGNITIVE.md → COGNITIVE-ARCHITECTURE.md
+
+| Aspect | Details |
+|--------|---------|
+| **Current** | `docs/COGNITIVE.md` |
+| **Future** | `docs/COGNITIVE-ARCHITECTURE.md` |
+| **Reason** | Reduce ambiguity as repository grows |
+
+#### Rationale
+
+Future repository growth will likely introduce:
+- **Cognitive Engineering**: Volume II discipline
+- **Cognitive Runtime**: Volume V component
+- **Cognitive Stack**: Layer specification
+- **Cognitive Benchmarks**: Volume IV testing
+
+The longer filename `COGNITIVE-ARCHITECTURE.md` provides:
+1. **Clarity**: Distinguishes from future cognitive-related content
+2. **Consistency**: Follows kebab-case naming pattern
+3. **Scalability**: Accommodates future cognitive domain folder
+
+#### Implementation
+
+This is documentation only. Do NOT rename the file now.
+
+When Volume II (Cognitive Engineering) is ready to be implemented:
+1. Rename `COGNITIVE.md` to `COGNITIVE-ARCHITECTURE.md`
+2. Create `docs/Cognitive-Engineering/` folder
+3. Update all cross-references
+
+#### Status
+
+**Planned** — No action required until Volume II begins.
+
+---
+
 ## Future RFCs
 
-Potential RFCs for this domain:
+RFC roadmap for cognitive architecture:
 
-| RFC | Title | Purpose |
-|-----|-------|---------|
-| RFC 0003 | Cognitive Stack Specification | Formal specification of layer interfaces |
-| RFC 0004 | Layer Integration Protocol | How layers communicate |
-| RFC 0005 | Agent Execution Model | Orchestration framework |
+| RFC | Title | Dependency | Purpose |
+|-----|-------|------------|---------|
+| RFC 0003 | Context Engineering | After this doc | Information delivery standards |
+| RFC 0004 | Memory Engineering | After RFC 0003 | Retention standards |
+| RFC 0005 | Cognitive Stack Specification | After RFC 0004 | Formalize layer interfaces |
+| RFC 0006 | Layer Integration Protocol | After RFC 0005 | How layers communicate |
+| RFC 0007 | Agent Execution Model | After RFC 0006 | Orchestration framework |
+
+#### Dependency Rationale
+
+1. **RFC 0003 (Context)** → Foundation for all subsequent layers
+2. **RFC 0004 (Memory)** → Depends on Context being defined
+3. **RFC 0005 (Stack Spec)** → Requires Context and Memory context
+4. **RFC 0006 (Layer Protocol)** → Requires Stack specification
+5. **RFC 0007 (Agent Model)** → Requires Layer protocol
 
 ---
 

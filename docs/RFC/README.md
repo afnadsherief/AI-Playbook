@@ -2,6 +2,50 @@
 
 Process for proposing and discussing significant engineering changes.
 
+---
+
+## Standing Repository Rules
+
+### Rule: Domain Introduction Protocol
+
+> **No new engineering domain may be introduced without first updating:**
+> - `INDEX.md` — Add to navigation and domain tables
+> - `GLOSSARY.md` — Add domain-specific terminology
+> - `TERMINOLOGY.md` — Add domain naming conventions
+>
+> **Every engineering discipline must immediately become part of the repository's navigation, vocabulary, and knowledge model.**
+
+#### Rationale
+
+This rule ensures that:
+1. **Discoverability**: New domains are immediately findable through standard navigation
+2. **Vocabulary Consistency**: Domain-specific terms are defined before use
+3. **Naming Coherence**: New domains follow established conventions
+4. **Knowledge Integrity**: The repository's knowledge model grows coherently
+
+#### Implementation
+
+When introducing a new engineering domain:
+
+1. **Before creating domain content:**
+   - Update `INDEX.md` with domain entry
+   - Update `GLOSSARY.md` with domain terminology
+   - Update `TERMINOLOGY.md` with naming conventions
+
+2. **Create domain content:**
+   - Add domain folder with README
+   - Create initial standards documents
+
+3. **After domain establishment:**
+   - Create RFC for formal proposal (if applicable)
+   - Add to volume roadmap
+
+#### Exceptions
+
+None. This rule is absolute to maintain repository integrity.
+
+---
+
 ## Overview
 
 RFCs provide a structured process for discussing, refining, and documenting significant engineering decisions before they become standards or architecture decisions.
@@ -288,10 +332,11 @@ After review:
 
 ## Related RFCs
 
-| RFC | Title | Status |
-|-----|-------|--------|
-| [0001](./0001-Prompt-Contracts.md) | Prompt Contracts | Experimental |
-| [0002](./0002-Prompt-Observability.md) | Prompt Observability | Experimental |
+| RFC | Title | Status | Maturity |
+|-----|-------|--------|----------|
+| [0001](./0001-Prompt-Contracts.md) | Prompt Contracts | Experimental | Experimental |
+| [0002](./0002-Prompt-Observability.md) | Prompt Observability | Experimental | Experimental |
+| [0008](./0008-Engineering-Dependency-Model.md) | Engineering Dependency Model | Draft | Draft |
 
 ## Related Specifications
 
