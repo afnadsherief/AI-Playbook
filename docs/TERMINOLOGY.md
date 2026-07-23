@@ -1,11 +1,11 @@
 ---
 Status: Active
-Version: 1.0
+Version: 1.1
 Maturity: Production
 Owner: Engineering Team
 Category: Knowledge Foundation
-Last Reviewed: 2024-01-15
-Next Review: 2024-07-15
+Last Reviewed: 2026-07-24
+Next Review: 2026-10-24
 ---
 
 # Terminology Standards
@@ -15,8 +15,6 @@ Language and naming conventions for AI-Playbook documentation.
 ## Purpose
 
 This document establishes consistent language across the repository, ensuring clarity, professionalism, and vendor-neutrality.
-
----
 
 ## Language Principles
 
@@ -59,8 +57,6 @@ Avoid vendor-specific or marketing language.
 | "AI model" | "AI", "the AI", "AI assistant" |
 | "Token" | "Token" with vendor-specific pricing |
 | "System prompt" | "Magic prompt", "ultimate instruction" |
-
----
 
 ## Naming Conventions
 
@@ -135,8 +131,6 @@ Same conventions as RFC naming.
 | Patch version | Bug fixes |
 | Pre-release | alpha, beta, rc |
 
----
-
 ## Governance Terminology
 
 ### Document States
@@ -178,8 +172,6 @@ Same conventions as RFC naming.
 | Deprecated | Being phased out |
 | Archived | Retained for reference |
 
----
-
 ## Usage Notes
 
 ### Prompt vs. Instruction
@@ -210,162 +202,21 @@ Same conventions as RFC naming.
 | Test | Verify specific behavior |
 | Evaluate | Assess overall quality or performance |
 
----
-
-## Examples
-
-### Document Header
-
-```markdown
----
-Status: Active
-Version: 1.0
-Maturity: Production
-Owner: Engineering Team
-Category: Engineering Standards
-Last Reviewed: 2024-01-15
-Next Review: 2024-07-15
----
-```
-
-### RFC Header
-
-```markdown
----
-Status: RFC
-Maturity: Experimental
-Version: 1.0
-Owner: Engineering Team
-Category: Prompt Engineering
-Created: 2024-01-15
-Last Updated: 2024-01-15
-RFC Number: 0001
----
-```
-
-### ADR Header
-
-```markdown
----
-status: accepted
-date: 2024-01-15
-authors:
-  - name: Author Name
-    email: author@company.com
-deciders:
-  - name: Decider Name
----
-```
-
----
-
-## Words to Avoid
-
-### Marketing Language
-
-| Avoid | Reason |
-|-------|--------|
-| Magic | Implies unexplainable |
-| Ultimate | Marketing superlative |
-| Super | Marketing superlative |
-| Amazing | Marketing superlative |
-| Revolutionary | Marketing superlative |
-| Game-changer | Marketing cliché |
-
-### Vague Terms
-
-| Avoid | Use Instead |
-|-------|-------------|
-| Stuff | Specific term |
-| Things | Specific term |
-| Maybe | Specific assessment |
-| Somehow | Specific method |
-| Eventually | Specific timeline |
-
-### Jargon
-
-| Avoid | Use Instead |
-|-------|-------------|
-| Synergy | Collaboration |
-| Leverage | Use |
-| Circle back | Follow up |
-| Deep dive | Detailed analysis |
-| Low-hanging fruit | Easy wins |
-
----
-
-## Case Conventions
-
-| Convention | Usage | Example |
-|------------|-------|---------|
-| Title Case | Document titles, headings | "Engineering Standards" |
-| Sentence case | Body text, descriptions | "the prompt validates input" |
-| UPPER CASE | Acronyms, warnings | "DO NOT USE", "RFC" |
-| kebab-case | File names, URLs | `engineering-standards.md` |
-| camelCase | Code identifiers | `orderExtractor` |
-| snake_case | Variable names | `order_id` |
-
----
-
-## Document Structure Language
-
-### Required Sections
-
-Every standard document should include:
-
-1. **Purpose** — Why this document exists
-2. **Scope** — What it covers
-3. **Core Principles** — Fundamental guidelines
-4. **Standards** — Specific requirements
-5. **Workflow** — Process documentation
-6. **Examples** — Concrete illustrations
-7. **Checklist** — Verification items
-8. **Anti-Patterns** — Common mistakes
-9. **Related Documents** — Cross-references
-10. **Future Evolution** — Planned changes
-
-### Metadata Header
-
-Every document should have YAML frontmatter:
-
-```yaml
----
-Status: Active
-Version: 1.0
-Maturity: Production
-Owner: Engineering Team
-Category: Engineering Standards
-Last Reviewed: 2024-01-15
-Next Review: 2024-07-15
----
-```
-
----
-
 ## Related Documents
 
-| Document | Relationship |
-|----------|--------------|
-| [INDEX](./INDEX.md) | Navigation |
-| [GLOSSARY](./GLOSSARY.md) | Term definitions |
-| [EVOLUTION](./EVOLUTION.md) | Volume roadmap |
-| [COGNITIVE](./COGNITIVE.md) | Cognitive architecture |
+- [INDEX](./INDEX.md)
+- [GLOSSARY](./GLOSSARY.md)
+- [EVOLUTION](./EVOLUTION.md)
+- [COGNITIVE](./COGNITIVE.md)
 
-## Related Standards
+## Related RFCs
 
-| Standard | Relationship |
-|----------|--------------|
-| [Documentation Standards](../Engineering/05-Documentation-Standards.md) | Document formatting |
-| [Naming Conventions](../Engineering/02-Repository-Standards.md) | File naming |
+- [0001: Prompt Contracts](./RFC/0001-Prompt-Contracts.md)
+- [0002: Prompt Observability](./RFC/0002-Prompt-Observability.md)
+- [0008: Engineering Dependency Model](./RFC/0008-Engineering-Dependency-Model.md)
 
 ## Related Templates
 
-| Template | Relationship |
-|----------|--------------|
-| [RFC Template](./RFC/0000-rfc-template.md) | RFC formatting |
-| [Architecture Review](./templates/Architecture-Review-Template.md) | Architecture docs |
-| [ADR Template](../adr/0000-template.md) | ADR formatting |
+- [Architecture Review](./templates/Architecture-Review-Template.md)
 
----
-
-*Last Updated: 2024-01-15*
+_Last Updated: 2026-07-24_
