@@ -1,18 +1,16 @@
 ---
 Status: Active
-Version: 1.0
+Version: 1.1
 Maturity: Production
 Owner: Engineering Team
 Category: Knowledge Foundation
-Last Reviewed: 2024-01-15
-Next Review: 2024-07-15
+Last Reviewed: 2026-07-24
+Next Review: 2026-10-24
 ---
 
 # Repository Evolution
 
-How AI-Playbook grows from Sprint 0 to production-ready knowledge base.
-
----
+How AI-Playbook grows from sprint-based implementation into a volume-based knowledge system.
 
 ## Overview
 
@@ -24,8 +22,6 @@ AI-Playbook uses two parallel organization systems:
 | **Volumes** | Content-based | Published documentation (tags, releases) |
 
 Understanding the relationship between these systems is essential for navigation.
-
----
 
 ## Sprints vs. Volumes
 
@@ -65,8 +61,6 @@ Volume IV: Trust Engineering
 Volume V: AI Factory
 ```
 
----
-
 ## Relationship Diagram
 
 ```
@@ -91,23 +85,21 @@ Flow:
 Sprint → Commit → Review → Merge → Volume → Release → Tag
 ```
 
----
-
 ## Volume Structure
 
 ### Volume I: Engineering Foundations
 
-**Status**: In Progress (v0.4.0)
+**Status**: In Progress
 
 The foundational layer that all other volumes depend upon.
 
 | Sprint | Contents |
 |--------|----------|
 | Sprint 0 | Repository bootstrap, folder structure, README |
-| Sprint 1 | Engineering Standards (12 documents) |
-| Sprint 2 | Prompt Engineering (13 documents) |
-| Sprint 2.5 | Architecture Governance (RFCs, maturity) |
-| Sprint 2.6 | Knowledge Foundation (index, glossary, terminology) |
+| Sprint 1 | Engineering Standards |
+| Sprint 2 | Prompt Engineering |
+| Sprint 2.5 | Architecture Governance |
+| Sprint 2.6 | Knowledge Foundation |
 
 **Planned additions**: ADR expansion, benchmark templates
 
@@ -188,155 +180,45 @@ Production-grade implementation systems.
 
 **Dependencies**: Requires all preceding volumes
 
----
-
-## Volume Relationship Diagram
-
-```
-AI-Playbook Volume Architecture
-═══════════════════════════════════════════════════════════════
-
-Volume V: AI Factory
-    │
-    │  Requires
-    ▼
-Volume IV: Trust Engineering
-    │
-    │  Requires
-    ▼
-Volume III: Execution Engineering
-    │
-    │  Requires
-    ▼
-Volume II: Cognitive Engineering
-    │
-    │  Requires
-    ▼
-Volume I: Engineering Foundations
-    │
-    │  Built on
-    ▼
-    ┌─────────────────────────────────────────┐
-    │  Sprint 0 → Sprint 1 → Sprint 2 → ... │
-    └─────────────────────────────────────────┘
-```
-
----
-
-## From Standards to Implementation
-
-```
-┌─────────────┐
-│   Volumes   │  ← Organized by discipline
-└──────┬──────┘
-       │ contains
-       ▼
-┌─────────────┐
-│  Standards  │  ← Engineering guidelines
-└──────┬──────┘
-       │ specifies
-       ▼
-┌─────────────┐
-│Specifications│  ← Machine-readable schemas
-└──────┬──────┘
-       │ implemented by
-       ▼
-┌─────────────┐
-│   Sprints   │  ← Development iterations
-└──────┬──────┘
-       │ produces
-       ▼
-┌─────────────┐
-│   Releases  │  ← Versioned snapshots
-└─────────────┘
-```
-
----
-
-## Release Cadence
-
-| Phase | Frequency | Contents |
-|-------|----------|----------|
-| **Major** (v1.0, v2.0) | Volume complete | Full discipline coverage |
-| **Minor** (v0.3, v0.4) | Sprint merged | New domain added |
-| **Patch** (v0.4.1) | Hotfix | Error corrections |
-
----
-
 ## Current Status
 
 | Metric | Value |
 |--------|-------|
-| Current Version | v0.4.0 |
-| Volume Progress | Volume I: ~90% |
+| Current Version | v0.5.0 |
+| Volume Progress | Volume I: growing |
 | Sprints Completed | 0, 1, 2, 2.5, 2.6 |
 | Sprints Planned | 3+ |
 | Volumes Planned | 5 |
-
----
 
 ## Future Evolution
 
 ### Volume Completion Path
 
 ```
-v0.4.0 (current)
+v0.5.0 (current)
     │
     ▼
-v0.5.0: Sprint 3 (Context Engineering)
+v0.6.0: Sprint 3 (Context Engineering)
     │
     ▼
-v0.6.0: Sprint 4 (Memory Engineering)
+v0.7.0: Sprint 4 (Memory Engineering)
     │
     ▼
-v0.7.0: Sprint 5 (Reasoning Engineering)
+v0.8.0: Sprint 5 (Reasoning Engineering)
     │
     ▼
-v0.8.0: Sprint 6 (Decision + Planning Engineering)
-    │
-    ▼
-v0.9.0: Sprint 7 (Execution domains)
+v0.9.0: Sprint 6 (Decision + Planning Engineering)
     │
     ▼
 v1.0.0: Volume I Complete
 ```
 
-### Governance Evolution
-
-As volumes complete, governance will evolve:
-
-| Phase | Governance Model |
-|-------|-----------------|
-| v0.x | Contributor-driven |
-| v1.x | Committee-driven |
-| v2.x | Standards-body |
-
----
-
-## Future RFCs
-
-RFC roadmap for Volume II and beyond:
-
-| RFC | Title | Volume | Sprint |
-|-----|-------|--------|--------|
-| RFC 0003 | Context Engineering | II | 3 |
-| RFC 0004 | Memory Engineering | II | 4 |
-| RFC 0005 | Cognitive Stack Specification | II | 5 |
-| RFC 0006 | Layer Integration Protocol | II | 5 |
-| RFC 0007 | Agent Execution Model | III | 7 |
-| RFC 0008 | Engineering Dependency Model | I | 2.7 (this sprint) |
-
----
-
 ## Related Documents
 
-- [INDEX](./INDEX.md) — Repository navigation
-- [GLOSSARY](./GLOSSARY.md) — Term definitions
-- [RFC README](./RFC/README.md) — RFC lifecycle
-- [Engineering Standards](../Engineering/) — Volume I content
-- [Prompt Engineering](../Prompt-Engineering/) — Volume I content
-- [Cognitive Architecture](./COGNITIVE.md) — Cognitive stack roadmap
+- [INDEX](./INDEX.md)
+- [GLOSSARY](./GLOSSARY.md)
+- [TERMINOLOGY](./TERMINOLOGY.md)
+- [COGNITIVE](./COGNITIVE.md)
+- [RFC README](./RFC/README.md)
 
----
-
-*Last Updated: 2024-01-15*
+_Last Updated: 2026-07-24_
