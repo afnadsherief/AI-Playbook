@@ -1,8 +1,11 @@
-# zeeddrops
+# zeeddrops (LEGACY)
 
 ## Location
 - **Local:** `C:\Users\Afnad Sherief\Projects\zeeddrops`
-- **GitHub:** https://github.com/afnadsherief/zeeddrops
+- **GitHub:** https://github.com/afnadsherief/zeeddrops (**no local repo now points at this remote**)
+- **Remote status:** `origin` renamed to `legacy-origin`, upstream tracking removed (2026-08-08)
+
+**Status: LEGACY (do not delete)** — superseded by `zeeddrops-web` at `C:\Projects\ZeedDrops\zeeddrops-web`.
 
 ## Purpose
 Production-grade ecommerce platform for Zeed Drops, built with Next.js, TypeScript, and a documentation-first architecture.
@@ -36,9 +39,9 @@ L2 Active
 - zeedbeez-website (marketing site)
 
 ## Risks
-- **Nested repo conflict** — `zeeddrops-web/` has its own `.git/` and the same origin remote, with no `.gitmodules` registration
-- Three local working trees push to the same remote (`zeeddrops`, `zeeddrops-web`, `zeeddrops-current-old`)
-- Local branch `main` has no upstream tracking configured
+- **Nested repo conflict (contained)** — `zeeddrops-web/` inside this tree still has its own `.git/`, no `.gitmodules`; both are now on `legacy-origin` with no upstream tracking, so accidental pushes are prevented
+- Three divergent histories previously shared one remote; resolved by isolation, not by merge — the histories remain unreconciled
+- GitHub repo `afnadsherief/zeeddrops` is now orphaned: it has content but no local tree tracking it. Decide whether to archive it.
 - Incomplete (some pages are stubs)
 
 ## Notes

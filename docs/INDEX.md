@@ -24,9 +24,16 @@ AI-Playbook/
 │   ├── Engineering/         # Engineering standards
 │   ├── Prompt-Engineering/  # Prompt engineering framework
 │   ├── RFC/                 # Requests for Comments
-│   └── templates/           # Document templates
+│   ├── repos/               # Per-repository intelligence (35 repos)
+│   ├── templates/           # Document templates
+│   ├── SYSTEM_MAP.md        # Layer model + relationships + conflicts
+│   ├── REGISTRY.md          # System registry table
+│   ├── SYSTEM_RULES.md      # Ecosystem rules
+│   └── AUDIT_FINDINGS.md    # Drift and duplication analysis
 ├── specs/                   # Machine-readable specifications
 ├── adr/                     # Architecture Decision Records
+├── agents/                  # Agent definitions
+├── prompts/                 # Prompt templates
 ├── benchmarks/              # Performance benchmarks
 ├── projects/                # Project documentation
 ├── knowledge/               # Knowledge base
@@ -35,6 +42,11 @@ AI-Playbook/
 ├── scripts/                 # Utility scripts
 └── .github/                 # GitHub workflows
 ```
+
+## System Position
+
+AI-Playbook is the **Knowledge** layer. It describes; it does not decide or execute.
+See [SYSTEM_MAP](./SYSTEM_MAP.md) for the full five-layer model.
 
 ## Current Direction
 
@@ -54,6 +66,9 @@ Before any new domain is added, the index, glossary, and terminology documents m
 
 ## Related Documents
 
+- [SYSTEM_MAP](./SYSTEM_MAP.md)
+- [REGISTRY](./REGISTRY.md)
+- [SYSTEM_RULES](./SYSTEM_RULES.md)
 - [GLOSSARY](./GLOSSARY.md)
 - [TERMINOLOGY](./TERMINOLOGY.md)
 - [EVOLUTION](./EVOLUTION.md)

@@ -1,7 +1,7 @@
 # zeedbeez-website
 
 ## Location
-- **Local:** UNKNOWN
+- **Local:** `C:\AI\systems\zeedbeez-website` (cloned 2026-08-08)
 - **GitHub:** https://github.com/afnadsherief/zeedbeez-website
 
 ## Purpose

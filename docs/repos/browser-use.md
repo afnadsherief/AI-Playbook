@@ -2,7 +2,7 @@
 
 ## Location
 - **Local:** `C:\AI\Tools\AI\browser-use`
-- **GitHub:** UNKNOWN (no fork under `afnadsherief`)
+- **GitHub:** https://github.com/afnadsherief/browser-use (fork created 2026-08-08)
 - **Upstream:** https://github.com/browser-use/browser-use
 
 ## Purpose
@@ -41,8 +41,7 @@ L3 Production (upstream project)
 - AI-Orchestration (potential agent runtime consumer)
 
 ## Risks
-- Tracks upstream directly — local edits would be lost on pull and cannot be pushed.
-- Not forked to `afnadsherief`, so it is absent from the GitHub inventory.
+- Fork created 2026-08-08; `origin` = fork, `upstream` = original. Fork not yet synced or diverged.
 - Requires a Python toolchain that is not guaranteed present on this machine.
 
 ## Notes

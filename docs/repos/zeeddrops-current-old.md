@@ -2,7 +2,7 @@
 
 ## Location
 - **Local:** `C:\Users\Afnad Sherief\Projects\zeeddrops-current-old`
-- **GitHub:** https://github.com/afnadsherief/zeeddrops (same remote — no dedicated repo)
+- **GitHub:** none — `origin` renamed to `legacy-origin` (https://github.com/afnadsherief/zeeddrops), upstream tracking removed 2026-08-08
 
 ## Purpose
 Earlier working copy of the Zeed Drops Next.js application, retained as a historical/reference snapshot.
@@ -43,7 +43,7 @@ Next.js, React, TypeScript. Exact versions UNKNOWN — no `package.json` at repo
 L1 Prototype (superseded)
 
 ## Risks
-- Shares the `afnadsherief/zeeddrops` origin with two other local trees — push collision risk.
+- Previously shared the `afnadsherief/zeeddrops` origin with two other local trees; isolated 2026-08-08 so push collision is no longer possible.
 - Directory name (`-current-old`) is self-contradictory and misleading.
 - No `package.json` found at root; buildability unverified.
 - Contains `node_modules/` and `.next/` — stale build artefacts on disk.

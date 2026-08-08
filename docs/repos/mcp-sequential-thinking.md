@@ -2,7 +2,7 @@
 
 ## Location
 - **Local:** `C:\AI\Tools\MCP\mcp-sequential-thinking`
-- **GitHub:** UNKNOWN (no fork under `afnadsherief`)
+- **GitHub:** https://github.com/afnadsherief/mcp-sequential-thinking (fork created 2026-08-08)
 - **Upstream:** https://github.com/arben-adm/mcp-sequential-thinking
 
 ## Purpose
@@ -38,8 +38,7 @@ L3 Production (upstream project)
 - ponytail (`ponytail-mcp` sub-package)
 
 ## Risks
-- Tracks upstream directly — no personal fork, local changes cannot be pushed.
-- Absent from the GitHub repo inventory, so it is invisible to remote-based tooling.
+- Fork created 2026-08-08; `origin` = fork, `upstream` = original. Fork not yet synced or diverged.
 - One of five MCP servers in the ecosystem; registration/ownership boundaries undocumented.
 
 ## Notes

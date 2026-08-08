@@ -1,7 +1,7 @@
 # Sniper-Monster
 
 ## Location
-- **Local:** UNKNOWN
+- **Local:** `C:\AI\systems\Sniper-Monster` (cloned 2026-08-08)
 - **GitHub:** https://github.com/afnadsherief/Sniper-Monster
 
 ## Purpose

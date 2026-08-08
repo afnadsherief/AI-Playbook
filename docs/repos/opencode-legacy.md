@@ -2,7 +2,7 @@
 
 ## Location
 - **Local:** `C:\AI\Tools\AI\opencode`
-- **GitHub:** UNKNOWN (no fork under `afnadsherief`)
+- **GitHub:** https://github.com/afnadsherief/opencode (fork created 2026-08-08)
 - **Upstream:** https://github.com/opencode-ai/opencode
 
 ## Purpose
@@ -41,7 +41,7 @@ L2 Active (upstream archived)
 ## Risks
 - **Upstream archived and renamed** — no further development; successor is `charmbracelet/crush`.
 - Not the same codebase as the currently used opencode CLI configuration under `~/.config/opencode`; naming collision risk.
-- No personal fork — cannot receive local changes.
+- Fork created 2026-08-08; `origin` = fork, `upstream` = original (archived upstream).
 
 ## Notes
 Retained for provenance. Distinct from `C:\AI\.opencode` and `C:\Users\Afnad Sherief\.config\opencode`, which are configuration directories, not repositories.

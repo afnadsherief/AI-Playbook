@@ -1,7 +1,7 @@
 # Splus-Bridge
 
 ## Location
-- **Local:** UNKNOWN
+- **Local:** `C:\AI\systems\Splus-Bridge` (cloned 2026-08-08)
 - **GitHub:** https://github.com/afnadsherief/Splus-Bridge
 
 ## Purpose

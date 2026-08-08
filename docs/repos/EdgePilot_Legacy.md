@@ -1,7 +1,7 @@
 # EdgePilot_Legacy
 
 ## Location
-- **Local:** UNKNOWN
+- **Local:** `C:\AI\systems\EdgePilot_Legacy` (cloned 2026-08-08)
 - **GitHub:** https://github.com/afnadsherief/EdgePilot_Legacy
 
 ## Purpose

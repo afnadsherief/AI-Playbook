@@ -1,7 +1,7 @@
 # dmitri_propfirm_engine
 
 ## Location
-- **Local:** UNKNOWN
+- **Local:** `C:\AI\systems\dmitri_propfirm_engine` (cloned 2026-08-08)
 - **GitHub:** https://github.com/afnadsherief/dmitri_propfirm_engine
 
 ## Purpose

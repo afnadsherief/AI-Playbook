@@ -1,38 +1,36 @@
-# zeeddrops-web
+# zeeddrops-web (CANONICAL)
 
 ## Location
-- **Local:** `C:\Users\Afnad Sherief\Projects\zeeddrops\zeeddrops-web`
-- **GitHub:** https://github.com/afnadsherief/zeeddrops (same remote as parent — no dedicated repo)
+- **Local (canonical):** `C:\Projects\ZeedDrops\zeeddrops-web`
+- **GitHub:** https://github.com/afnadsherief/zeeddrops-web (private, created 2026-08-08)
+- **Superseded local copy:** `C:\Users\Afnad Sherief\Projects\zeeddrops\zeeddrops-web` (now isolated, remote renamed `legacy-origin`)
 
 ## Purpose
-Active Next.js 16 web application for the Zeed Drops ecommerce product. Nested inside the `zeeddrops` repository as an independent, unregistered git repository sharing the same origin remote.
+Single source of truth for the Zeed Drops web application. Next.js + TypeScript ecommerce prototype with an in-repo AI operating layer (`.ai/`) and a documentation-first `project/` architecture set.
 
 ## System Role
 Product
 
 ## Architecture Summary
-Next.js (App Router) + TypeScript application:
-- Feature-based `src/` organisation
-- Own test tooling (Playwright + Vitest configs present)
-- Documentation-first: `docs/`, `AGENTS.md`, `CLAUDE.md` at repo root
-- Own `.git/` directory; not registered as a submodule in the parent (`.gitmodules` absent)
+Next.js App Router + TypeScript. Domain-oriented `src/` layout (`domains/`, `data/`, `components/`). Carries its own governance surface: `.ai/` for agent context and `project/` for architecture documents (MASTERPLAN, COMMERCE_ARCHITECTURE, CUSTOMER_EXPERIENCE_ARCHITECTURE, KNOWLEDGE_PLATFORM_ARCHITECTURE, AI_CONTEXT, BACKLOG, AGENTS).
+
+Two branches with **unrelated histories**:
+- `feature/prototype-v2` — 95 commits, active, GitHub default branch
+- `main` — 2 commits, initial scaffold, retained as fallback
 
 ## Key Modules
-- `src/app/` — routes/pages
+- `src/app/` — routes
 - `src/components/` — UI components
-- `src/features/` — feature modules
-- `src/hooks/` — React hooks
-- `src/lib/` — utilities
-- `src/services/` — service layer
-- `src/styles/` — tokens, animations, typography
-- `src/types/` — shared types
-- `tests/` — test suites
-- `docs/` — product/engineering documentation
+- `src/domains/` — domain modules
+- `src/data/` — data layer
+- `src/hooks/`, `src/lib/`, `src/styles/`, `src/types/`
+- `.ai/` — in-repo AI operating layer
+- `project/` — architecture and planning documents
+- `docs/` — engineering documentation
 - `public/` — static assets
 
 ## Dependencies
-Next.js 16, React 19, TypeScript, Tailwind (postcss config present), Playwright, Vitest.
-Exact dependency list UNKNOWN — no `package.json` at repository root at time of scan.
+Next.js, React, TypeScript, Tailwind (postcss), Vitest (`vitest.config.ts`), ESLint. Declared in `package.json` (`zeeddrops-web@0.1.0`).
 
 ## Capabilities (tags)
 - frontend
@@ -40,20 +38,21 @@ Exact dependency list UNKNOWN — no `package.json` at repository root at time o
 - nextjs
 - product
 - testing
+- ai-agent
 
 ## Maturity Level
 L2 Active
 
 ## Related Systems
-- zeeddrops (parent repository, same origin)
-- zeeddrops-current-old (legacy scaffold, same origin)
 - design-intelligence (design system runtime)
+- zeeddrops (legacy business repo, isolated)
+- zeeddrops-current-old (legacy scaffold, isolated)
+- AI-Orchestration (control layer)
 
 ## Risks
-- **Nested repo conflict** — independent `.git/` inside `Projects\zeeddrops`, not a submodule, pushing to the same remote as the parent. High risk of divergent/overwritten history.
-- Three local working trees (`zeeddrops`, `zeeddrops-web`, `zeeddrops-current-old`) all point at `afnadsherief/zeeddrops`.
-- No `package.json` found at root — build entrypoint unclear from scan.
-- Local branch `main` has no upstream tracking configured.
+- `main` and `feature/prototype-v2` have **unrelated histories** — they cannot be fast-forwarded into each other; a deliberate merge or branch retirement decision is still pending
+- Parent directory `C:\Projects\ZeedDrops\` is **not** a git repository; `ai/`, `archive/`, `assets/`, `experiments/` siblings are untracked and unbacked-up
+- Repo lives outside both `C:\AI\` and the user home, breaking the otherwise-consistent layout
 
 ## Notes
-Per `AGENTS.md`: this is **not** the Next.js commonly known — the vendored 16.x has breaking API changes; consult `node_modules/next/dist/docs/` before editing. Last commit: 2026-08-06 `docs: update AGENTS.md to reflect product state`. No restructuring performed.
+Established as canonical on 2026-08-08. Both branches pushed without force; history intact (95 commits verified against remote). Default branch on GitHub is `feature/prototype-v2`. Two older local trees were isolated rather than deleted.

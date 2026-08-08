@@ -26,6 +26,11 @@ Standardized formats reduce cognitive load:
 
 ```
 docs/           — User-facing documentation
+  repos/        — Per-repository intelligence
+  SYSTEM_MAP.md — Layer model, relationships, conflicts
+  REGISTRY.md   — System registry
+  SYSTEM_RULES.md — Ecosystem rules
+specs/          — Machine-readable specifications
 templates/      — Reusable templates
 prompts/        — Prompt engineering resources
 agents/         — Agent definitions and configurations
@@ -38,6 +43,14 @@ privacy/        — Privacy compliance materials
 scripts/        — Automation and utilities
 .github/        — GitHub configuration
 ```
+
+## System Position
+
+AI-Playbook is the **Knowledge** layer of a five-layer model:
+Playbook (describes) → Orchestration (decides) → Runtime (does) → Systems / Tools.
+
+It must not contain runtime code or orchestration logic.
+Canonical definition: [docs/SYSTEM_MAP.md](docs/SYSTEM_MAP.md).
 
 ## Key Decisions
 

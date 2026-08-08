@@ -1,7 +1,7 @@
 # pranov
 
 ## Location
-- **Local:** UNKNOWN
+- **Local:** `C:\AI\systems\pranov` (cloned 2026-08-08)
 - **GitHub:** https://github.com/afnadsherief/pranov
 
 ## Purpose

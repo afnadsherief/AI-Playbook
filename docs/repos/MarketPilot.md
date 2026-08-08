@@ -1,7 +1,7 @@
 # MarketPilot
 
 ## Location
-- **Local:** UNKNOWN
+- **Local:** `C:\AI\systems\MarketPilot` (cloned 2026-08-08)
 - **GitHub:** https://github.com/afnadsherief/MarketPilot
 
 ## Purpose

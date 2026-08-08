@@ -1,7 +1,7 @@
 # coldmail-api
 
 ## Location
-- **Local:** UNKNOWN
+- **Local:** `C:\AI\systems\coldmail-api` (cloned 2026-08-08)
 - **GitHub:** https://github.com/afnadsherief/coldmail-api
 
 ## Purpose

@@ -1,7 +1,7 @@
 # naturals-salon-adoor
 
 ## Location
-- **Local:** UNKNOWN
+- **Local:** `C:\AI\systems\naturals-salon-adoor` (cloned 2026-08-08)
 - **GitHub:** https://github.com/afnadsherief/naturals-salon-adoor
 
 ## Purpose

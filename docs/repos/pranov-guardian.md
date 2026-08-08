@@ -1,7 +1,7 @@
 # pranov-guardian
 
 ## Location
-- **Local:** UNKNOWN
+- **Local:** `C:\AI\systems\pranov-guardian` (cloned 2026-08-08)
 - **GitHub:** https://github.com/afnadsherief/pranov-guardian
 
 ## Purpose

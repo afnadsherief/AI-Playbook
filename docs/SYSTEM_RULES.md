@@ -19,8 +19,9 @@ Any change MUST update:
 Every repo (local or GitHub) MUST have a corresponding entry in:
 - `/docs/repos/<repo-name>.md`
 - `/docs/REGISTRY.md`
+- `/docs/SYSTEM_MAP.md` (layer assignment)
 
-**Rationale:** Unlisted repos are invisible repos. If it exists, it's documented.
+**Rationale:** Unlisted repos are invisible repos. If it exists, it's documented. AI-HQ went undiscovered through two full discovery runs because `C:\Projects\` was outside the declared scan scope.
 
 ## 4. Maturity Tracking
 Every repo MUST declare its maturity level:
@@ -75,3 +76,28 @@ Repos with no implementation (L0) for >90 days should be:
 - Deleted
 
 **Rationale:** Empty repos (Sniper-Monster, dmitri_propfirm_engine, AI-Workspace) create confusion and namespace waste.
+
+## 11. Every Repo Has a Remote
+Any git repository holding original work MUST have a remote. Local-only repositories are unbacked-up single points of failure.
+
+**Rationale:** AI-HQ holds 8 commits of institutional governance documentation with no remote. `codex-plugins` lives in a deletable `.tmp` cache with no remote.
+
+**Exception:** deliberately isolated legacy repos, which MUST use the remote name `legacy-origin` with upstream tracking removed (see Rule 12).
+
+## 12. Legacy Isolation Protocol
+A superseded repository is never deleted. It is isolated:
+1. `git remote rename origin legacy-origin`
+2. `git branch --unset-upstream`
+3. Mark `Status: LEGACY (do not delete)` in its `docs/repos/` entry
+
+**Rationale:** Three zeeddrops trees shared one remote with divergent histories. Isolation preserved all three histories without a merge or a force push.
+
+## 13. One Canonical Repo Per Product
+Exactly one repository is canonical per product. It is marked `(CANONICAL)` in its `docs/repos/` title. All others are LEGACY under Rule 12.
+
+**Rationale:** Ambiguity about which zeeddrops tree was authoritative blocked a remote fix for an entire run.
+
+## 14. Layer Vocabulary Is Single-Sourced
+`docs/SYSTEM_MAP.md` is the only authority for layer names. Any repo defining its own competing layer model MUST reference the System Map or raise an ADR to change it.
+
+**Rationale:** AI-Playbook, AI-Orchestration and AI-HQ currently define three incompatible layer models.
