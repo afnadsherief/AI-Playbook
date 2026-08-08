@@ -8,7 +8,7 @@
 Declares the **execution layer** boundary. Created to separate "doing" from "deciding" (AI-Orchestration) and "describing" (AI-Playbook). Currently a documented scaffold with no implementation.
 
 ## System Role
-Runtime
+L3 Runtime — **abstraction layer, NOT ACTIVE** (ADR-0002)
 
 ## Architecture Summary
 Standard three-layer directory scaffold with a specification README. No code. The README defines intake contracts (`ApprovedExecutionPlan`, `ContextPackage`, `RuntimeSession`), return contracts (`ExecutionResult`, `ArtifactMetadata`), and nine execution responsibilities.

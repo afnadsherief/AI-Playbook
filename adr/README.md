@@ -16,6 +16,16 @@ ADRs follow the standard template and include:
 
 ## Index
 
+| ADR | Title | Status |
+|---|---|---|
+| [0001](./0001-system-governance.md) | System Governance Model | Accepted |
+| [0002](./0002-runtime-authority.md) | Runtime Authority | Accepted |
+| [0003](./0003-layer-architecture.md) | Canonical Layer Architecture | Accepted |
+
 See `0000-template.md` for the ADR template.
 
 Naming convention: `NNNN-title.md` (e.g., `0001-use-vector-db.md`)
+
+## Authority
+
+Per ADR-0001, **this directory is the only location in the ecosystem where architectural decisions are recorded.** ADRs held in other repositories describe that repository's internal behaviour only and are subordinate to these.

@@ -100,4 +100,40 @@ Exactly one repository is canonical per product. It is marked `(CANONICAL)` in i
 ## 14. Layer Vocabulary Is Single-Sourced
 `docs/SYSTEM_MAP.md` is the only authority for layer names. Any repo defining its own competing layer model MUST reference the System Map or raise an ADR to change it.
 
-**Rationale:** AI-Playbook, AI-Orchestration and AI-HQ currently define three incompatible layer models.
+**Rationale:** AI-Playbook, AI-Orchestration and AI-HQ defined three incompatible layer models. Resolved by ADR-0003.
+
+---
+
+# Governance Rules (ADR-enforced)
+
+## 15. AI-Playbook Is the Only Governance Authority
+AI-Playbook is the single source of truth for all standards, ADRs, terminology, architecture models and system rules. No other repository may originate them.
+
+**Authority:** [ADR-0001](../adr/0001-system-governance.md)
+
+## 16. AI-HQ Is Strategic Only
+AI-HQ expresses vision, strategy, prioritisation and executive direction. It is **non-authoritative**: it may not define standards, ADRs, layer models or architecture. Strategic direction requiring a standards change must be raised as an ADR in AI-Playbook.
+
+**Authority:** [ADR-0001](../adr/0001-system-governance.md)
+
+## 17. Runtime Authority
+`design-intelligence` is the ACTIVE runtime (L3). `AI-Runtime` is a future abstraction layer and is **not active**. Any claim that AI-Runtime is the runtime is incorrect until a superseding ADR is accepted.
+
+**Authority:** [ADR-0002](../adr/0002-runtime-authority.md)
+
+## 18. Layer Model
+The canonical layer model is L0 Knowledge, L1 Intelligence, L2 Orchestration, L3 Runtime, L4 Systems, L5 Tools. Every repository maps to exactly one layer. Dependencies flow downward only; L5 may be consumed by any layer.
+
+**Authority:** [ADR-0003](../adr/0003-layer-architecture.md)
+
+## 19. Orchestration Is Controller-Only
+AI-Orchestration decides; it never executes. It may hold contracts and specifications for execution, but no execution logic.
+
+> **Boundary test:** if code performs an action with a side effect it is L3; if code chooses which action to perform it is L2.
+
+**Authority:** [ADR-0002](../adr/0002-runtime-authority.md)
+
+## 20. No Independent Architecture Models
+No repository may define its own layer model, governance hierarchy or architecture authority. A repository may document its **own internal behaviour** only, and must carry an authority statement referencing AI-Playbook.
+
+**Authority:** [ADR-0001](../adr/0001-system-governance.md), [ADR-0003](../adr/0003-layer-architecture.md)

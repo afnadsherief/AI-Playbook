@@ -8,7 +8,7 @@
 Meta-orchestration layer providing execution contracts, selector framework, and governance for the AI-Company ecosystem. Defines HOW systems should execute, not the execution itself.
 
 ## System Role
-Control
+L2 Orchestration — **controller-only, never executes** (ADR-0002)
 
 ## Architecture Summary
 Spec-driven architecture with implemented foundation:

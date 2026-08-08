@@ -8,7 +8,7 @@
 A-OS v3 â€” Autonomous Multi-Company AI Operating System. Deterministic execution engine that runs multiple companies simultaneously with safe code transformations, self-evolution, and Obsidian-based knowledge capture.
 
 ## System Role
-Runtime
+L3 Runtime — **ACTIVE RUNTIME** (ADR-0002)
 
 ## Architecture Summary
 Layered architecture with clear separation:

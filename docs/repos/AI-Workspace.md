@@ -8,7 +8,7 @@
 Empty skeleton workspace directory. Placeholder for future work.
 
 ## System Role
-Unknown
+L4 Systems (per ADR-0003; empty placeholder)
 
 ## Architecture Summary
 Empty directory structure:

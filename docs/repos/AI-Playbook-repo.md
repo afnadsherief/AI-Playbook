@@ -8,7 +8,7 @@
 Canonical engineering playbook and knowledge base for all AI products, agents, and platforms. Single source of truth for system documentation, standards, and repo intelligence.
 
 ## System Role
-Knowledge
+L0 Knowledge — **AUTHORITATIVE** (ADR-0001)
 
 ## Architecture Summary
 Documentation-first repository:
