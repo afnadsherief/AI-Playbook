@@ -59,7 +59,7 @@ AI-Playbook          AUTHORITATIVE  — sole source of standards, ADRs, terminol
 |---|---|---|---|---|---|
 | L0 | **AI-Playbook** | `C:\AI\AI-Playbook` | ✅ synced | L2 Active | **AUTHORITATIVE** |
 | L0 | **AI-HQ** | `C:\Projects\AI-HQ` | ✅ synced | L2 Active | Strategic, non-authoritative |
-| L1 | **AI-Intelligence** | `C:\AI\AI-Intelligence` | ❌ not a repo | L1 Prototype | Prime Agent + RLM (V1) |
+| L1 | **AI-Intelligence** | `C:\AI\AI-Intelligence` | ✅ synced | L1 Prototype | Prime Agent + RLM; wired to L2 |
 | L2 | **AI-Orchestration** | `...\AI\Core\orchestration\AI-Orchestration` | ✅ synced | L2 Active | Controller only |
 | L3 | **design-intelligence** | `C:\AI\design-intelligence` | ✅ | L3 Production | **ACTIVE RUNTIME** |
 | L3 | **AI-Runtime** | `C:\AI\AI-Runtime` | ❌ not a repo | L0 Idea | Future abstraction |

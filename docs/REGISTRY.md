@@ -26,7 +26,7 @@
 |--------|------|-------|----------|--------|
 | Engineering Playbook | AI-Playbook | **L0** Knowledge | L2 Active | ✅ Authoritative |
 | Institutional HQ | AI-HQ | **L0** Knowledge | L2 Active | ✅ Synced (strategic, non-authoritative) |
-| Prime Agent + RLM | AI-Intelligence | **L1** Intelligence | L1 Prototype | ⚠️ Not a git repo |
+| Prime Agent + RLM | AI-Intelligence | **L1** Intelligence | L1 Prototype | ✅ Synced, wired to L2 |
 | Meta-Orchestration | AI-Orchestration | **L2** Orchestration | L2 Active | ✅ Synced (controller-only) |
 | A-OS Engine | design-intelligence | **L3** Runtime | L3 Production | ✅ **ACTIVE RUNTIME** |
 | Runtime Abstraction | AI-Runtime | **L3** Runtime | L0 Idea | ⚠️ Not active, not a repo |
