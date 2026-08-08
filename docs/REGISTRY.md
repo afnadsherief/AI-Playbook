@@ -26,7 +26,7 @@
 |--------|------|-------|----------|--------|
 | Engineering Playbook | AI-Playbook | **L0** Knowledge | L2 Active | ✅ Authoritative |
 | Institutional HQ | AI-HQ | **L0** Knowledge | L2 Active | ✅ Synced (strategic, non-authoritative) |
-| *Prime Agent + RLM* | *(none)* | **L1** Intelligence | — | ⚠️ Declared, unpopulated |
+| Prime Agent + RLM | AI-Intelligence | **L1** Intelligence | L1 Prototype | ⚠️ Not a git repo |
 | Meta-Orchestration | AI-Orchestration | **L2** Orchestration | L2 Active | ✅ Synced (controller-only) |
 | A-OS Engine | design-intelligence | **L3** Runtime | L3 Production | ✅ **ACTIVE RUNTIME** |
 | Runtime Abstraction | AI-Runtime | **L3** Runtime | L0 Idea | ⚠️ Not active, not a repo |
@@ -92,10 +92,10 @@
 | Layer | Count | Repos |
 |---|---|---|
 | **L0** Knowledge | 2 | AI-Playbook, AI-HQ |
-| **L1** Intelligence | 0 | *declared, unpopulated* |
+| **L1** Intelligence | 1 | AI-Intelligence |
 | **L2** Orchestration | 1 | AI-Orchestration |
 | **L3** Runtime | 2 | design-intelligence (active), AI-Runtime (future) |
 | **L4** Systems | 15 | zeeddrops-web, zeeddrops, zeeddrops-current-old, zeedbeez-website, Gymverse, pranov, pranov-guardian, MarketPilot, EdgePilot_Legacy, Splus-Bridge, coldmail-api, naturals-salon-adoor, Sniper-Monster, dmitri_propfirm_engine, AI-Workspace |
 | **L5** Tools | 15 | ponytail, context7, codebase-memory-mcp, github-mcp-server, mcp-sequential-thinking, codex-plugins, humanlayer, browser-use, opencode, motion, playwright, vitest, ark, park-ui, ui |
 
-**Total: 35 repositories** — all mapped, no "Unknown" layer remains.
+**Total: 36 repositories** — all mapped, no "Unknown" layer remains, all six layers populated.

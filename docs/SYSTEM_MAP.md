@@ -15,7 +15,7 @@ Six layers. Every repository maps to exactly one. Dependencies flow **downward o
 | Layer | Name | Verb | Owns | Must not |
 |---|---|---|---|---|
 | **L0** | Knowledge | describes | standards, ADRs, terminology, repo intelligence, strategy | decide, execute |
-| **L1** | Intelligence | reasons | Prime Agent, RLM, reasoning capability | orchestrate, execute |
+| **L1** | Intelligence | reasons | Prime Agent, RLM, reasoning capability (`AI-Intelligence`) | orchestrate, execute |
 | **L2** | Orchestration | decides | contracts, selectors, governance application, execution plans | **execute** (ADR-0002) |
 | **L3** | Runtime | executes | plan execution, sessions, adapters, observability | decide what runs |
 | **L4** | Systems | delivers | product and business logic | re-implement orchestration |
@@ -26,8 +26,8 @@ L0  KNOWLEDGE        AI-Playbook (AUTHORITATIVE)      describes
                      AI-HQ (strategic, subordinate)
                               │
                               v
-L1  INTELLIGENCE     Prime Agent + RLM  (declared,    reasons
-                     not yet populated)
+L1  INTELLIGENCE     AI-Intelligence                  reasons
+                     (Prime Agent + RLM, V1)
                               │
                               v
 L2  ORCHESTRATION    AI-Orchestration                 decides
@@ -59,7 +59,7 @@ AI-Playbook          AUTHORITATIVE  — sole source of standards, ADRs, terminol
 |---|---|---|---|---|---|
 | L0 | **AI-Playbook** | `C:\AI\AI-Playbook` | ✅ synced | L2 Active | **AUTHORITATIVE** |
 | L0 | **AI-HQ** | `C:\Projects\AI-HQ` | ✅ synced | L2 Active | Strategic, non-authoritative |
-| L1 | *Prime Agent + RLM* | — | — | — | Declared, unpopulated |
+| L1 | **AI-Intelligence** | `C:\AI\AI-Intelligence` | ❌ not a repo | L1 Prototype | Prime Agent + RLM (V1) |
 | L2 | **AI-Orchestration** | `...\AI\Core\orchestration\AI-Orchestration` | ✅ synced | L2 Active | Controller only |
 | L3 | **design-intelligence** | `C:\AI\design-intelligence` | ✅ | L3 Production | **ACTIVE RUNTIME** |
 | L3 | **AI-Runtime** | `C:\AI\AI-Runtime` | ❌ not a repo | L0 Idea | Future abstraction |
@@ -188,8 +188,10 @@ Per ADR-0003 rule 1, every repository maps to exactly one layer.
 | AI-Playbook | `C:\AI\AI-Playbook` | **AUTHORITATIVE** |
 | AI-HQ | `C:\Projects\AI-HQ` | Strategic, non-authoritative |
 
-### L1 — Intelligence (0)
-Declared, unpopulated. Reserved for Prime Agent + RLM.
+### L1 — Intelligence (1)
+| Repo | Location | Status |
+|---|---|---|
+| AI-Intelligence | `C:\AI\AI-Intelligence` | Prime Agent + RLM, V1 passive |
 
 ### L2 — Orchestration (1)
 | Repo | Location | Note |
@@ -240,7 +242,7 @@ Declared, unpopulated. Reserved for Prime Agent + RLM.
 | ark | `C:\AI\Design\Reference\ark-ui` | UI reference |
 | park-ui | `C:\AI\Design\Reference\park-ui` | UI reference |
 
-**Total: 35** — L0:2, L1:0, L2:1, L3:2, L4:15, L5:15
+**Total: 36** — L0:2, L1:1, L2:1, L3:2, L4:15, L5:15
 
 ---
 
