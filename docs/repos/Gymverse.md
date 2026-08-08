@@ -1,7 +1,7 @@
 # Gymverse
 
 ## Location
-- **Local:** `C:\AI\Users\Afnad Sherief\Projects\` (not in C:\AI)
+- **Local:** NOT FOUND (no local clone in `C:\AI\`, `C:\Users\Afnad Sherief\`, `Projects\` or `AI\`)
 - **GitHub:** https://github.com/afnadsherief/Gymverse
 
 ## Purpose
@@ -41,7 +41,7 @@ L2 Active
 - park-ui / ark / ui (design references)
 
 ## Risks
-- Not in C:\AI root (in user Projects directory)
+- **GitHub-only** — no local working copy found in any scanned location
 - Unknown if connected to A-OS runtime
 
 ## Notes

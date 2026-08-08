@@ -29,7 +29,7 @@ L0 Idea
 ## Related Systems
 - AI-Orchestration (sibling directory)
 
-## Risks**
+## Risks
 - No content — dead directory structure
 - Confusing name (AI-Workspace vs AI-Orchestration)
 

@@ -11,18 +11,13 @@ Production-grade ecommerce platform for Zeed Drops, built with Next.js, TypeScri
 Product
 
 ## Architecture Summary
-Next.js + TypeScript ecommerce:
-- App Router architecture
-- Feature-based organization (features/home/Hero, FeaturedProducts, Research)
-- Design system with tokens, animations, typography
-- Component library (Badge, Button, Container, Heading, Section)
+Next.js + TypeScript ecommerce parent repository. On disk the parent tree is thin (`app/`, `public/`, config files) and contains a **nested independent git repository** `zeeddrops-web/` holding the active application source.
 
 ## Key Modules
-- `src/app/` — pages (home, about, products, journal, research)
-- `src/components/` — UI components + layout + motion
-- `src/features/` — home page features
-- `src/hooks/` — scroll position hook
-- `src/styles/` — design tokens, animations, typography
+- `app/` — parent-level route directory
+- `public/` — static assets
+- `zeeddrops-web/` — nested repository (documented separately)
+- `AGENTS.md` / `CLAUDE.md` — governance docs
 
 ## Dependencies
 - Next.js, React, TypeScript
@@ -35,11 +30,15 @@ ecommerce, nextjs, frontend, design-system
 L2 Active
 
 ## Related Systems
+- zeeddrops-web (nested active application)
+- zeeddrops-current-old (legacy scaffold, same origin)
 - design-intelligence (system runtime)
 - zeedbeez-website (marketing site)
 
 ## Risks
-- Local copy not found — may be in different directory or cloud-only
+- **Nested repo conflict** — `zeeddrops-web/` has its own `.git/` and the same origin remote, with no `.gitmodules` registration
+- Three local working trees push to the same remote (`zeeddrops`, `zeeddrops-web`, `zeeddrops-current-old`)
+- Local branch `main` has no upstream tracking configured
 - Incomplete (some pages are stubs)
 
 ## Notes
